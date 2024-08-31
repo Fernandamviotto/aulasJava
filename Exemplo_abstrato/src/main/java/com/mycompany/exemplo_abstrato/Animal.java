@@ -9,4 +9,10 @@ public abstract class Animal {
         this.nome = nome;
         this.idade = idade;
     }
+    
+    //metodo abstrato que deve ser implementada em outras superclasse
+    public abstract void emitirSom();
+    public void dormir(){
+        System.out.println(nome + "esta dormindo");
+    }
 }
