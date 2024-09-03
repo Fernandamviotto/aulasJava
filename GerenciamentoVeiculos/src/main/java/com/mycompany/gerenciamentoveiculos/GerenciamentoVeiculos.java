@@ -1,13 +1,5 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
-
 package com.mycompany.gerenciamentoveiculos;
 
-/**
- *
- * @author fernanda.silva
- */
 public class GerenciamentoVeiculos {
 
     public static void main(String[] args) {
