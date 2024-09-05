@@ -16,7 +16,7 @@ public abstract class Veiculo {
     
     //metodo abstrato
     public abstract double calcularAluguel(int dias);{
-    System.out.println("O valor do aluguel para" + /*dias +*/ "é de" + valorDiaria);
+        System.out.println("O aluguel do carro da placa" + placa +  "marca" + marca + "e modelo" + modelo +"é de" +valorDiaria);
     }
     
 }

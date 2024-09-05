@@ -1,13 +1,12 @@
 package com.mycompany.gerenciamentoveiculos;
 
-
-public class Carro extends Veiculo implements IPassageiro {
-    protected int numeroPortas;
+public class Moto extends Veiculo implements IPassageiro {
     
-    public Carro(String placa, String marca, String modelo, double valorDiaria, int numeroPortas){
+    protected boolean temSidecar;
+    
+    public Moto(String placa, String marca, String modelo, double valorDiaria, boolean temSidecar){
         super(placa, marca, modelo, valorDiaria);
-        this.numeroPortas = numeroPortas;
-                
+        this.temSidecar = temSidecar;
     }
     
     @Override
@@ -20,5 +19,4 @@ public class Carro extends Veiculo implements IPassageiro {
         System.out.println(" A capacidade de passageiros é de");
     }
 }
-
 
