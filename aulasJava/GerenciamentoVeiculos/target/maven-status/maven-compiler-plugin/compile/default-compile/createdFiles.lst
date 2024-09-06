@@ -1,0 +1,8 @@
+com\mycompany\gerenciamentoveiculos\GerenciamentoVeiculos.class
+com\mycompany\gerenciamentoveiculos\IPassageiro.class
+com\mycompany\gerenciamentoveiculos\IPesado.class
+com\mycompany\gerenciamentoveiculos\Veiculo.class
+com\mycompany\gerenciamentoveiculos\Caminhao.class
+com\mycompany\gerenciamentoveiculos\Carro.class
+com\mycompany\gerenciamentoveiculos\Moto.class
+com\mycompany\gerenciamentoveiculos\GerenciamentoDeVeiculos.class
