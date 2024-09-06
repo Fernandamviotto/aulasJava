@@ -20,4 +20,14 @@ public class GerenciamentoDeVeiculos {
         }
     }
     
+    public void Relatorio(){
+        if(indice == 0){
+            System.out.println("Nenhum veiculo cadastrado");
+        } else{
+            for(int i = 0; i < indice; i++){
+                //colocar os dados de cada string
+            }
+        }
+    }
+    
 }
