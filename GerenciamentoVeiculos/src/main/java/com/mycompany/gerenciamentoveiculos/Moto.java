@@ -10,13 +10,22 @@ public class Moto extends Veiculo implements IPassageiro {
     }
     
     @Override
-    public abstract double calcularAluguel(int dias);{
-        System.out.println("O aluguel do carro da placa" + placa +  "marca" + marca + "e modelo" + modelo +"é de" +valorDiaria);
+    public double calcularAluguel(int dias){
+        if (temSidecar == true){
+            return (dias * valorDiaria * 0.10) + valorDiaria;
+        } 
+        
+        return dias * valorDiaria;
+        
     }
     
     @Override
     public int calcularCapacidade(){
-        System.out.println(" A capacidade de passageiros é de");
+       if (temSidecar == true){
+            return 2;
+        } 
+        
+        return 1;
     }
 }
 

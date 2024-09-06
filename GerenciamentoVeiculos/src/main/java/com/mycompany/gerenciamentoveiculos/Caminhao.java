@@ -12,12 +12,16 @@ public class Caminhao extends Veiculo implements IPesado {
     }
     
     @Override
-    public abstract double calcularAluguel(int dias);{
-        System.out.println("O aluguel do carro da placa" + placa +  "marca" + marca + "e modelo" + modelo +"é de" +valorDiaria);
+    public double calcularAluguel(int dias){
+        if (eixos > 2){
+            return ((dias * valorDiaria * 0.02 ) + valorDiaria) * eixos;
+        } 
+            return dias * valorDiaria;
     }
     
     @Override
-    public int calcularCapacidade(){
-        System.out.println(" A capacidade de passageiros é de");
+    public double calcularTaxaPeso(){
+        return 0.05;
     }
+    
 }

@@ -11,13 +11,16 @@ public class Carro extends Veiculo implements IPassageiro {
     }
     
     @Override
-    public abstract double calcularAluguel(int dias);{
-        System.out.println("O aluguel do carro da placa" + placa +  "marca" + marca + "e modelo" + modelo +"é de" +valorDiaria);
-    }
+    public double calcularAluguel(int dias){
+     if (dias > 7){
+            return (dias * valorDiaria * 0.05) + valorDiaria;
+        } 
+            return dias * valorDiaria;
+}
     
     @Override
     public int calcularCapacidade(){
-        System.out.println(" A capacidade de passageiros é de");
+        return 5;
     }
 }
 
